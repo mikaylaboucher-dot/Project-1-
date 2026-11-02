@@ -1,1 +1,402 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* General Styling */
+/* -------------------------------- */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff8fc;
+    color: #3d2a35;
+    line-height: 1.6;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+/* Shared Header */
+/* -------------------------------- */
+
+.site-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    padding: 25px 5%;
+
+    background-color: #f8ddea;
+}
+
+.brand h2 {
+    color: #a64270;
+}
+
+.site-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.site-nav a {
+    color: #6f3653;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+/* Buttons */
+/* -------------------------------- */
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 22px;
+    background-color: #b74f7b;
+    color: white;
+    text-decoration: none;
+}
+
+.card-button {
+    margin-top: auto;
+    padding: 10px 18px;
+    background-color: #b74f7b;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+
+
+/* Small Titles */
+/* -------------------------------- */
+
+.small-title {
+    margin-bottom: 10px;
+    color: #a64270;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+
+/* Page 1 Hero */
+/* -------------------------------- */
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 60px 0;
+}
+
+.hero-main {
+    padding: 50px;
+    background-color: #f6c9dc;
+}
+
+.hero-main h1 {
+    margin-bottom: 20px;
+    color: #6f3653;
+    font-size: 46px;
+}
+
+.hero-main p {
+    max-width: 600px;
+}
+
+.hero-info {
+    padding: 40px;
+    background-color: #eadcf5;
+}
+
+.hero-info h2 {
+    margin-bottom: 15px;
+    color: #794f8f;
+}
+
+.hero-info h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.hero-info ul {
+    padding-left: 20px;
+}
+
+
+/* Page 1 Gallery */
+/* -------------------------------- */
+
+.projects-section {
+    padding: 60px 0;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading h2 {
+    margin-bottom: 10px;
+    color: #6f3653;
+    font-size: 34px;
+}
+
+
+/* Required Responsive Grid */
+
+.cards-gallery {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+
+/* Required Flexbox Card Interior */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    min-height: 420px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #efd0df;
+}
+
+.card-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 190px;
+    margin-bottom: 20px;
+}
+
+.card-image span {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.card-one {
+    background-color: #d96b9b;
+}
+
+.card-two {
+    background-color: #c997d8;
+}
+
+.card-three {
+    background-color: #eaa9c4;
+}
+
+.card h3 {
+    margin-bottom: 12px;
+    color: #6f3653;
+    font-size: 22px;
+}
+
+.card p {
+    margin-bottom: 20px;
+}
+
+
+/* Shared Footer */
+/* -------------------------------- */
+
+.site-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 30px 5%;
+    background-color: #6f3653;
+    color: white;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* Page 2 Detail Hero */
+/* -------------------------------- */
+
+.detail-layout {
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+.detail-hero {
+    max-width: 850px;
+    margin-bottom: 50px;
+}
+
+.detail-hero h1 {
+    margin-bottom: 20px;
+    color: #6f3653;
+    font-size: 48px;
+}
+
+.lead-text {
+    font-size: 20px;
+}
+
+
+
+/* Page 2 Content Grid */
+/* -------------------------------- */
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+
+
+/* Main Article */
+/* -------------------------------- */
+
+.project-content {
+    padding: 30px;
+    background-color: white;
+}
+
+.project-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 350px;
+    margin-bottom: 35px;
+    background-color: #f6c9dc;
+}
+
+.project-visual p {
+    color: #6f3653;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.content-section {
+    margin-bottom: 40px;
+}
+
+.content-section h2 {
+    margin-bottom: 15px;
+    color: #794f8f;
+    font-size: 28px;
+}
+
+.content-section p {
+    margin-bottom: 15px;
+}
+
+
+
+/* Visual Media */
+/* -------------------------------- */
+
+.visual-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.visual-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 220px;
+    background-color: #eadcf5;
+    color: #794f8f;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+
+/* Project Details Sidebar */
+/* -------------------------------- */
+
+.project-meta {
+    padding: 30px;
+    background-color: #f3d8e8;
+}
+
+.project-meta h2 {
+    margin-bottom: 25px;
+    color: #6f3653;
+}
+
+.meta-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #d6a9bd;
+}
+
+.meta-item h3 {
+    margin-bottom: 5px;
+    color: #a64270;
+}
+
+
+/* Desktop Layout */
+/* -------------------------------- */
+
+@media (min-width: 768px) {
+    /* Header */
+    .site-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* Page 1 Hero Required 2fr / 1fr */
+
+    .hero-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+
+
+    /* Footer */
+    .site-footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+    /* Page 2 Required 3fr / 1fr */
+    .content-grid {
+        grid-template-columns: 3fr 1fr;
+    }
+
+
+    /* Visual Boxes */
+    .visual-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
